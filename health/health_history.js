@@ -1,8 +1,7 @@
 liff.init({ liffId: '1656902981-0g1VVnpN' }).then(async () => {
   if (!liff.isLoggedIn()) {
     liff.login({
-      redirectUri:
-        'https://tapp-smartcity.netlify.app/health/health_history.html'
+      redirectUri: 'https://system-tapp.netlify.app/health/health_history.html'
     });
   } else if (!(await checkUser(await getUID()))) {
     window.location = '../register.html';
